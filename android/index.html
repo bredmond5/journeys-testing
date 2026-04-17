@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Android Testing</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 400px;
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 24px;
+        }
+
+        .button {
+            display: block;
+            width: 100%;
+            padding: 18px 24px;
+            margin-bottom: 16px;
+            background: white;
+            color: #333;
+            text-decoration: none;
+            border-radius: 12px;
+            font-size: 16px;
+            font-weight: 600;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .button:active {
+            transform: translateY(0);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .label {
+            display: block;
+            color: white;
+            font-size: 12px;
+            margin-bottom: 4px;
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Android Testing Links</h1>
+
+        <span class="label">URI Scheme</span>
+        <a href="spotify://track/2OqHwg8IeV5xOzh4HBTaYC/?si=92d2-upETimzv1K00c8jog" class="button">
+            Spotify URI Scheme
+        </a>
+
+        <span class="label">Regular Link</span>
+        <a href="https://google.com" class="button">
+            Google.com
+        </a>
+
+        <span class="label">Chrome Intent</span>
+        <a href="intent://track/2OqHwg8IeV5xOzh4HBTaYC/?si=92d2-upETimzv1K00c8jog#Intent;scheme=spotify;package=com.spotify.music;end" class="button">
+            Chrome Intent to Spotify
+        </a>
+
+        <span class="label">Branch Link</span>
+        <a href="https://stage-freedom.branchbeta.link/czyhloXCSZb" class="button">
+            Branch Beta Link
+        </a>
+    </div>
+</body>
+</html>
